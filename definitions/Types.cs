@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace Epsilon.Types
 {
-    enum renderer_type
+    public enum renderer_type
     {
         vulkan = 0,
         dx12,
@@ -13,14 +13,14 @@ namespace Epsilon.Types
         size // if we ever want to iterate over renderer types
     };
 
-    enum ShaderModuleStage
+    public enum ShaderModuleStage
     {
         FRAGMENT = 0x1,
         VERTEX = 0x10,
         COMPUTE = 0x100,
         ALL = FRAGMENT | VERTEX | COMPUTE
     };
-    enum TextureFormat
+    public enum TextureFormat
     {
         // INTEGER IMAGE
         COLOR_R = 0,
@@ -59,7 +59,7 @@ namespace Epsilon.Types
         DEPTH_UNORM_STENCIL_8,
     };
 
-    enum VertexFormat
+    public enum VertexFormat
     {
         XY_UINT,
         XY_FLOAT,
@@ -69,7 +69,7 @@ namespace Epsilon.Types
         XYZW_FLOAT
     };
 
-    enum CompareFunction
+    public enum CompareFunction
     {
         ALWAYS = 0,
         LESS,
@@ -77,34 +77,34 @@ namespace Epsilon.Types
         EQUAL,
     };
 
-    enum WrapMode
+    public enum WrapMode
     {
         REPEAT = 0,
         CLAMP_TO_BORDER,
         CLAMP_TO_EDGE
     };
 
-    enum Filtering
+    public enum Filtering
     {
         POINT = 0,
         LINEAR,
         ANISOTROPIC
     };
 
-    enum WindingMode
+    public enum WindingMode
     {
         CLOCKWISE = 0,
         COUNTER_CLOCK_WISE
     };
 
-    enum CullMode
+    public enum CullMode
     {
         BACK = 0,
         FRONT,
         NONE
     };
 
-    enum UniformBindingType
+    public enum UniformBindingType
     {
         UNIFORM_BUFFER = 0,
         TEXTURE_SAMPLER,
